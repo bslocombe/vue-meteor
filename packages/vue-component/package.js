@@ -23,8 +23,8 @@ Package.registerBuildPlugin({
     'plugin/plugin.js',
   ],
   npmDependencies: {
-    'postcss': '7.0.16',
-    'postcss-load-config': '2.0.0',
+    "postcss": "8.4.33",
+    "postcss-load-config": "6.0.1",
     'postcss-selector-parser': '2.2.3',
     'postcss-modules': '1.4.1',
     'socket.io': '2.2.0',

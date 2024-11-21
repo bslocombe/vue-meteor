@@ -23,12 +23,12 @@ loadPostcssConfig = Meteor.wrapAsync(function (cb) {
   }
 
   loaded.then(config => {
-    let plugins = []
+    let plugins = {}
     let options = {}
 
     // merge postcss config file
     if (config && config.plugins) {
-      plugins = plugins.concat(config.plugins)
+      plugins = {...plugins, ...config.plugins}
     }
     if (config && config.options) {
       options = Object.assign({}, config.options, options)
